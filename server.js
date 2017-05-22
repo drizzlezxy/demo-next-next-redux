@@ -14,8 +14,7 @@ app.prepare()
     const router = new Router()
 
     router.get('/p/:id', async ctx => {
-      console.log('get /p/:id');
-      const actualPage = '/post';
+      const actualPage = (ctx.params.id === 'Todo') ? '/Todo' : '/post';
       const {
         req,
         res

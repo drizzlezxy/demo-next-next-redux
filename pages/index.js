@@ -16,6 +16,11 @@ export default () => (
       <PostLink id="hello-nextjs" title="Hello Next.js"/>
       <PostLink id="learn-nextjs" title="Learn Next.js is awesome"/>
       <PostLink id="deploy-nextjs" title="Deploy apps with Zeit"/>
+      <li>
+        <Link as={`/p/Todo`} href={`/Todo`}>
+          <a>TodoApp(immutable, redux)</a>
+        </Link>
+      </li>
     </ul>
   </Layout>
 )
